@@ -105,9 +105,9 @@ div.main-wrapper > a {
 
 div.blog {
     width: 100%;
-    min-height: 75vh;
+    height: 75vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
 }
@@ -121,6 +121,7 @@ ul.posts {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    overflow-y: auto;
 }
 
 ul.posts > li {
@@ -134,7 +135,7 @@ ul.posts > li {
 }
 
 ul.posts > li:hover {
-    box-shadow: 5px 5px 100px black;
+    box-shadow: 5px 5px 25px black;
     cursor: pointer;
     transition: all .5s;
 }
