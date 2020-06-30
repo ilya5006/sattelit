@@ -24,3 +24,13 @@ a {
 ul {
     list-style-type: none;
 }
+
+div.wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+div.wrapper *
+{
+    position: relative;
+}

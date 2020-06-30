@@ -1,0 +1,32 @@
+header {
+    background-color: #f6bf00;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 0;
+}
+
+header > h1, footer > h1 {
+    width: 50%;
+    padding-left: 1%;
+    color: white;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10%;
+}
+
+nav > a {
+    color: white;
+    font-size: 18px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}

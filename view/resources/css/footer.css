@@ -1,0 +1,42 @@
+footer {
+    background-color: #323232;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+}
+
+div.links {
+    display: flex;
+    width: 50%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.links > ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+ul.contacts > li, ul.help > li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 3px 0;
+}
+
+ul.contacts > li:first-child,
+ul.help > li:first-child {
+    font-weight: bold;
+}
+
+ul.contacts > li > p,
+ul.help > li > p,
+ul.contacts > li > a,
+ul.help > li > a {
+    font-size: 20px;
+    color: white;
+}
