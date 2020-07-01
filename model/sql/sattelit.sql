@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 01 2020 г., 01:43
+-- Время создания: Июл 01 2020 г., 19:02
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -40,7 +40,31 @@ CREATE TABLE `articles` (
 
 INSERT INTO `articles` (`id_article`, `name_article`, `text_article`) VALUES
 (1, 'Какая-то статья', 'Случайный тест. Случайный тест.Случайный тест.м Случайный тест.Случайный тест.Случайный тест.'),
-(2, 'Ещё одна', 'Ещё одна');
+(2, 'Ещё одна', 'Ещё одна'),
+(3, 'aaa', 'aaa'),
+(4, 'aaa', 'aaa'),
+(5, 'aaa', 'aaa'),
+(6, 'aaa', 'aaa'),
+(7, 'bbb', 'bbb'),
+(8, 'grgrgr', 'grgrgr');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE `users` (
+  `login` varchar(10) NOT NULL,
+  `password` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`login`, `password`) VALUES
+('admin', '$2y$10$m4FWjMEE./sfTaBem8EfTOVHmifs13Q93SNo8DH8S5kkwAIGIg0q2');
 
 --
 -- Индексы сохранённых таблиц
@@ -60,7 +84,7 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT для таблицы `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
