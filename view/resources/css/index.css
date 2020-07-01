@@ -18,18 +18,18 @@ div.main-wrapper {
 div.main-wrapper > h1,
 div.main-wrapper > p,
 div.main-wrapper > a,
-ul.posts > li > p  {
+div.posts > a > p  {
     color: white;
 }
 
 div.main-wrapper > h1,
 div.main-wrapper > p,
-ul.posts > li > p {
+div.posts > a > p {
     text-shadow: 5px 5px 5px black;
 }
 
 div.main-wrapper > a,
-ul.posts > li {
+div.posts > a {
     box-shadow: 5px 5px 10px black;
 }
 
@@ -54,7 +54,6 @@ div.line {
 
 div.blog {
     width: 100%;
-    /* height: 75vh; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -65,31 +64,32 @@ div.blog > h1 {
     padding: 1.5% 0;
 }
 
-ul.posts {
+div.posts {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     overflow-y: auto;
+    width: 100%;
 }
 
-ul.posts > li {
+div.posts > a {
     width: 20%;
     margin: 1%;
     padding: 6%;
-    background-image: url("/view/resources/img/bg.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 100% 100%;
 }
 
-ul.posts > li:hover {
+div.posts > a:hover {
     box-shadow: 5px 5px 25px black;
     cursor: pointer;
     transition: all .5s;
 }
 
-ul.posts > li > p {
+div.posts > a > p {
     font-size: 20px;
 }
 

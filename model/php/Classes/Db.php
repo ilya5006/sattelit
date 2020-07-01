@@ -50,5 +50,5 @@
         }
     }
 
-    $db = Database::init('localhost', 'root', '', 'sattelit');
+    $db = Database::init('localhost', 'root', 'root', 'sattelit');
 ?>
