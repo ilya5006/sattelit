@@ -10,7 +10,7 @@ fetch(`/model/php/get-articles-info.php`)
     articles.forEach((article) => {
         postsDiv.insertAdjacentHTML('beforeEnd', 
         `
-            <li><p>${article.name_article}</p></li>
+            <li style="background-image: url(/view/resources/img/article-img/${article.id_article}.jpg) "><p>${article.name_article}</p></li>
         `)
     })
 })
