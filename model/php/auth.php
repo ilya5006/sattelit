@@ -17,8 +17,21 @@
         $_SESSION['admin'] = 1;
         header('Location: /admin.php');
     }
-    else
-    {
-        echo 'Вы ввели неверные данные';
-    }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>failAuthPage</title>
+    <link rel="stylesheet" href="/view/resources/css/style.css">
+    <link rel="stylesheet" href="/view/resources/css/admin.css">
+</head>
+<body>
+    <?
+        if (!(password_verify($password, $passwordHashDb))){
+            echo '<p class="failAuth"> Вы ввели неверные данные </p>';
+        }
+    ?>
+</body>
+</html>

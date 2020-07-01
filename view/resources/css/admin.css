@@ -1,0 +1,63 @@
+body {
+    background-color: #f6bf00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.auth {
+    width: 25%;
+    min-height: 25vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: orange;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+form.newArticle {
+    width: 40%;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+form.auth > input[type="text"],
+form.auth > input[type="password"],
+form.auth > input[type="submit"],
+form.newArticle > input[type="text"],
+form.newArticle > input[type="file"],
+form.newArticle > input[type="submit"],
+form.newArticle > label {
+    width: 100%;
+    padding: 2%;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+form.auth > input[type="submit"],
+form.newArticle > input[type="submit"] {
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+
+form.newArticle > input[type="file"]{
+    display: none;
+}
+
+form.newArticle > label {
+    text-align: center;
+    background-color: rgb(255, 208, 147);
+    cursor: pointer;
+}
+
+p.failAuth {
+    font-size: 50px;
+}
